@@ -6,13 +6,13 @@ switch simple devkitpro project that initialise the window with glfw and glad
 Install or configure the pacman from <a href="https://devkitpro.org/wiki/devkitPro_pacman">devkitpro website</a> and Use the following command to install the necessary packages:
 
 ``` sh
-sudo (dkp-)pacman -S switch-cmake switch-tools switch-glfw switch-mesa switch-glad switch-glm 
+sudo dkp-pacman -S switch-dev switch-cmake switch-tools switch-glfw switch-mesa switch-glad switch-glm 
 ```
 
 for arch folks: 
 
 ``` sh
-sudo pacman -S switch-cmake switch-tools switch-glfw switch-mesa switch-glad switch-glm 
+sudo pacman -S switch-dev switch-cmake switch-tools switch-glfw switch-mesa switch-glad switch-glm 
 ```
 
 then, update the PATH enviroment variable as follows: 
@@ -28,7 +28,7 @@ add this command into .bashrc or .zshrc to make change persistent
 
 ## Building
 
-we need to use the <a href="https://github.com/devkitPro/catnip">catnip</a> command and it can be found at ```/opt/devkitpro/tools/bin/catnip``` in linux 
+we need to use the <a href="https://github.com/devkitPro/catnip">catnip</a> command and it can be found at ```/opt/devkitpro/tools/bin/catnip``` in linux and is part of 'switch-tools' package
 
 ``` sh
 catnip -T switch
